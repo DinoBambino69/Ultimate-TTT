@@ -42,7 +42,7 @@ public class TicTacToeGame extends BorderPane {
     }
 
     private MenuBar generateMenuBar(Stage stage) {
-        MenuItem newGameItem = new MenuItem("Restart game");
+        MenuItem newGameItem = new MenuItem("Restart");
         newGameItem.setAccelerator(new KeyCodeCombination(KeyCode.N, KeyCombination.SHORTCUT_DOWN));
         newGameItem.setOnAction(e -> newGame());
 
@@ -52,7 +52,7 @@ public class TicTacToeGame extends BorderPane {
         Menu gameMenu = new Menu("Game");
         gameMenu.getItems().addAll(newGameItem, exitItem);
 
-        MenuItem addItem = new MenuItem("Add player name(s)");
+        MenuItem addItem = new MenuItem("Add player name");
         addItem.setAccelerator(new KeyCodeCombination(KeyCode.A, KeyCombination.SHORTCUT_DOWN));
         addItem.setOnAction(e -> addName(stage));
 

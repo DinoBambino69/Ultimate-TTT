@@ -11,7 +11,7 @@ public class GameStart extends Application {
 
     @Override
     public void start(Stage stage) {
-        stage.setTitle("Ultimate Tic Tac Toe");
+        stage.setTitle("Ultimate Tic Tac Toe!");
         stage.setScene(new Scene(new TicTacToeGame(stage)));
         stage.show();
     }
